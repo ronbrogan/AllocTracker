@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AllocTracker.Tool": {
+      "commandName": "Project",
+      "commandLineArgs": "launch -t \"C:\\Users\\ronal\\source\\LoopingHelloWorld\\bin\\Debug\\net5.0\\LoopingHelloWorld.exe\""
+    }
+  }
+}

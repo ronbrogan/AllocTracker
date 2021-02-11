@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\AllocTracker.Native\AllocTracker.Profiler.Windows\bin\x64\$(Configuration)\AllocTracker.Profiler.dll">
+      <Link>Profilers\Windows\x64\AllocTracker.Profiler.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\AllocTracker.Native\AllocTracker.Profiler.Windows\bin\Win32\$(Configuration)\AllocTracker.Profiler.dll">
+      <Link>Profilers\Windows\x86\AllocTracker.Profiler.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+  </ItemGroup>
+  
+</Project>
